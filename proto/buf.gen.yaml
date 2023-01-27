@@ -12,6 +12,13 @@ plugins:
     opt:
       - paths=source_relative
   - name: ts
+  
+        - paths=source_relative
+  - name: grpc-gateway
+    out: generated-go
+    opt:
+      - paths=source_relative
+      
     out: ../frontend/src/types/proto
     # reference: https://github.com/deeplay-io/nice-grpc/blob/master/packages/nice-grpc-web/README.md#using-ts-proto
     opt: env=browser,useOptionals=messages,outputServices=nice-grpc,outputServices=generic-definitions,useExactTypes=false
